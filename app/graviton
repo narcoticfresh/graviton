@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+
+include 'vendor/graviton/graviton/app/console';
