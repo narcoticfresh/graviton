@@ -56,7 +56,9 @@
         "jenssegers/proxy": ">=3.0.0-beta2",
         "thefrozenfire/swagger": "~2.0",
         "symfony/psr-http-message-bridge": "~0.2",
-        "php-amqplib/rabbitmq-bundle": "^1.9"
+        "php-amqplib/rabbitmq-bundle": "^1.9",
+        "symfony/yaml": "^2.8.0",
+        "webuni/front-matter": "^0.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.6",

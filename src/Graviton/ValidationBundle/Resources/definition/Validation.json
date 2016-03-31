@@ -1,0 +1,45 @@
+{
+  "id": "Validation",
+  "title": "Validation",
+  "description": "Meta service to validate payloads without actually inserting them",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/meta/validation/",
+    "baseController": "\\Graviton\\ValidationBundle\\Controller\\ValidationController",
+    "parent": "graviton.validation.controller.validation",
+    "fixtures": [{}]
+  },
+  "target": {
+    "indexes": [],
+    "relations": [],
+    "fields": [
+      {
+        "name": "id",
+        "type": "varchar",
+        "title": "ID",
+        "description": "Unique identifier."
+      },
+      {
+        "name": "type",
+        "type": "varchar",
+        "title": "Type",
+        "description": "Type of data. Either 'core' or 'param'.",
+        "required": true
+      },
+      {
+        "name": "filename",
+        "type": "varchar",
+        "title": "Filename",
+        "description": "Name of the file you try to import",
+        "required": true
+      },
+      {
+        "name": "content",
+        "type": "varchar",
+        "title": "Content",
+        "description": "Full content of the file (including Front Matter)",
+        "required": true
+      }
+    ]
+  }
+}

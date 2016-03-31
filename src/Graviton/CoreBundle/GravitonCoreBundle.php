@@ -22,6 +22,7 @@ use Graviton\SecurityBundle\GravitonSecurityBundle;
 use Graviton\SwaggerBundle\GravitonSwaggerBundle;
 use Graviton\FileBundle\GravitonFileBundle;
 use Graviton\MigrationBundle\GravitonMigrationBundle;
+use Graviton\ValidationBundle\GravitonValidationBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Graviton\CoreBundle\Compiler\VersionCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -61,6 +62,7 @@ class GravitonCoreBundle extends Bundle implements GravitonBundleInterface
             new GravitonSecurityBundle(),
             new GravitonSwaggerBundle(),
             new GravitonFileBundle(),
+            new GravitonValidationBundle(),
             new GravitonRabbitMqBundle(),
             new GravitonMigrationBundle(),
             new GravitonProxyBundle(),
